@@ -4,7 +4,7 @@
          <link rel='stylesheet' type='text/css' href='butterstyle.css' />
     <title>CONTACT ME!</title>
     <link rel = "stylesheet" href = "contact me!">
-    <script>prompt("what is your name?")</script>
+    <script>var name = prompt("what is your name?")</script>
   </head>
   <body>
     <nav id="navbar">
@@ -15,6 +15,8 @@
 </nav> 
     <br><br>
     <h2> Contact me </h2>
+    <p id = "NamePara"></p>
+    <script> document.getElementById("NamePara").innerHTML = name;</script>
     <form id = "myform" action = "mailto:deetyapradhan30@gmail.com" method = "post" enctype = "text/plain">
       Fill in the form to contact me!
       <br>
