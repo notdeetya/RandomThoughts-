@@ -19,10 +19,10 @@ h1{
   height: auto;
   float:center;
   margin: auto;
-  background-image: linear-gradient(to bottom right, mint, light green);
+  background-image: linear-gradient(to bottom right,lavender, lavender);
   margin-top: 80px;
   padding:20px;
-  box-shadow: lavender;
+  box-shadow: brown;
 
 }
 #navbar>a{
