@@ -1,5 +1,5 @@
 body{
-	background-color:aqua;
+	background-color:pastel orange;
 }
 #mylogo{
 width: 20%;
@@ -19,7 +19,7 @@ h1{
   height: auto;
   float:center;
   margin: auto;
-  background-image: linear-gradient(to bottom right,white, pink);
+  background-image: linear-gradient(to bottom right,mint, light green);
   margin-top: 80px;
   padding:20px;
   box-shadow: rgba(211, 107, 107, 0.747) 10px 10px;
