@@ -21,7 +21,7 @@
       Fill in the form to contact me!
       <br>
       <label> First Name</label>
-       <input type = "text" name = "fname" id = "first name">
+       <input type = "text" name = "fname" id = "first name" onkeypress = "functionone()">
       <br> <br>
       <label for="lastname">Last Name</label>
  <input type="text" name="lname" id="lastname"><br><br>
@@ -54,5 +54,6 @@
       <input type = "password" id = "pwd" name = "passwd"> 
       <br><br>
       <input type = "submit" name = "submit" value = "submit">
+      <script> function functionone() {document.getElementById("first name").style.backgroundColor = "orange";</script>
     </body>
   </html>
