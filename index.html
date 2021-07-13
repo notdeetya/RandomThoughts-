@@ -6,8 +6,7 @@
    <title> Home </title>
     <body>
      <script>alert(" im tired");</script>
-     <h1 id = "MyRandomThoughts" onmouseover= "colorchange()"> My random thoughts
-     onmouseout = "changecolor()" My random thoughts
+     <h1 id = "MyRandomThoughts" onmouseover= "colorchange()" onmouseout = "restorecolor()""> My random thoughts
      </h1>
      
      <h1 id = "myheading"></h1> 
@@ -19,14 +18,8 @@
 </nav> 
 <p>My random thoughts throught my random days</p>
      <script>
-     function colorchange()
-      {
-      document.getElementById("MyRandomThoughts").style.color = "white";
-      }
-           function changecolor()
-      {
-      document.getElementById("MyRandomThoughts").style.color = "black";
-      }
+     function colorchange() {document.getElementById("MyRandomThoughts").style.color = "white";}
+      function restorecolor() {document.getElementById("MyRandomThoughts").style.color = "black"]                                                                
      </script>
     </body>
     </html>
