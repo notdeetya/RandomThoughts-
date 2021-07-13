@@ -6,8 +6,8 @@
    <title> Home </title>
     <body>
      <script>alert(" im tired");</script>
-     <h1> My random thoughts</h1>
-     <h1 id = "myheading"></h1>
+     <h1 id = "MyRandomThoughts" onmouseover= "colorchange()"> My random thoughts</h1>
+     <h1 id = "myheading"></h1> 
 <nav id="navbar">
 <a href="index.html"> Home </a>
 <a href="100.html"> About math </a>
@@ -15,5 +15,11 @@
  <a href="contactme.html"> Contact me! </a>
 </nav> 
 <p>My random thoughts throught my random days</p>
+     <script>
+     function colorchange()
+      {
+      document.getElementById("MyRandomThoughts").style.color = "white";
+      }
+     </script>
     </body>
     </html>
