@@ -21,5 +21,14 @@
       <p>CIAO!!</P>
       <p> <3</p>
     <p>hi</p>
+    <label> Enter a number</label>
+    <input type = "number" id = "number">
+     <input type = "text" id = "result" disabled>
+    <button onclick = "verify()"> Submit </button>
+    <script> function verify(){
+        var num = document.getElementById("number").value;
+        if(num>100){result.value = "your number is greater than 100";}
+       else{result.value = "your number is less than 100";}
+}</script>
 </body>
   </html>
