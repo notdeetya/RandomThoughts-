@@ -22,7 +22,7 @@
      <script>
      function colorchange() {document.getElementById("MyRandomThoughts").style.color = "white";}
       function restorecolor() {document.getElementById("MyRandomThoughts").style.color = "black"} 
-      function getdate() {var today = new Date();document.getElementById("today").innerHTML= today; toLocalString();}
+      function getdate() {var today = new Date();document.getElementById("today").innerHTML= today.toLocalString();}
       setInterval(getdate,1000);
      </script>
     </body>
