@@ -9,6 +9,7 @@
      <h1 id = "MyRandomThoughts" onmouseover= "colorchange()" onmouseout = "restorecolor()"> My random thoughts
      </h1>
      
+     <p id = "today"></p>
      <h1 id = "myheading"></h1> 
 <nav id="navbar">
 <a href="index.html"> Home </a>
@@ -20,7 +21,9 @@
 <p>My random thoughts throught my random days</p>
      <script>
      function colorchange() {document.getElementById("MyRandomThoughts").style.color = "white";}
-      function restorecolor() {document.getElementById("MyRandomThoughts").style.color = "black"}                                                               
+      function restorecolor() {document.getElementById("MyRandomThoughts").style.color = "black"} 
+      function getdate() {var today = new Date();document.getElementById("today").innerHTML= today; toLocalString();}
+      setInterval(getdate,1000);
      </script>
     </body>
     </html>
