@@ -20,12 +20,26 @@
 </nav> 
 <p>My random thoughts throught my random days</p>
      <div id = "slideshow">
-     <img src = "niki nihaachu."</div>
+     <img src = "niki nihaachu.jpg" class = "slides">
+     <img src = "wilbrrrr.jpg" class = "slides">
+     <img src = "tomMy.jpg" class = "slides">
+     <img src = "ranbob.jpg" class = "slides"></div>
+     
      <script>
      function colorchange() {document.getElementById("MyRandomThoughts").style.color = "white";}
       function restorecolor() {document.getElementById("MyRandomThoughts").style.color = "black"} 
       function getdate() {var today = new Date();document.getElementById("today").innerHTML= today.toLocaleString();}
       setInterval(getdate,1000);
+      var slideIndex = 0;
+      function startshow() {
+      var MySlides = document.getElementsByClassName("slides");
+      for (var i=0; i<4:i++){
+MySlides[i].style.display="none";
+}
+MySlides[slideIndex].style.display = "block"; 
+       slideIndex = slideIndex + 1;
+       setTimeout(startshow, 1000);
+      }
      </script>
     </body>
     </html>
