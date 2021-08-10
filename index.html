@@ -1,8 +1,16 @@
 <Doctype! html>
  <html>
    <head>
+    <style>
+     #slideshow{width:60%;
+    height:500px;
+    margin:auto;
+} 
+     #slideshow img{width:100%;
+}</style>
      <link rel='stylesheet' type='text/css' href='butterstyle.css' />
      </head>
+  
    <title> Home </title>
     <body>
      <script>alert(" im tired");</script>
@@ -29,17 +37,23 @@
      function colorchange() {document.getElementById("MyRandomThoughts").style.color = "white";}
       function restorecolor() {document.getElementById("MyRandomThoughts").style.color = "black"} 
       function getdate() {var today = new Date();document.getElementById("today").innerHTML= today.toLocaleString();}
-      setInterval(getdate,1000);
+      setInterval(getdate,3000)
       var slideIndex = 0;
       function startshow() {
+       
       var MySlides = document.getElementsByClassName("slides");
       for (var i=0; i<4:i++){
 MySlides[i].style.display="none";
 }
 MySlides[slideIndex].style.display = "block"; 
        slideIndex = slideIndex + 1;
+       if(slideIndex>=4){
+slideIndex=0;}
+}
+
        setTimeout(startshow, 1000);
       }
+      startshow()
      </script>
     </body>
     </html>
