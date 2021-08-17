@@ -35,12 +35,12 @@
      
      <script>
      function colorchange() {document.getElementById("MyRandomThoughts").style.color = "white";}
-      function restorecolor() {document.getElementById("MyRandomThoughts").style.color = "black"} 
+      function restorecolor() {document.getElementById("MyRandomThoughts").style.color = "black";} 
       function getdate() {var today = new Date();document.getElementById("today").innerHTML= today.toLocaleString();}
-      setInterval(getdate,3000)
       var slideIndex = 0;
+       startshow();
+      setInterval(getdate,3000);
       function startshow() {
-       
       var MySlides = document.getElementsByClassName("slides");
       for (var i=0; i<4:i++){
 MySlides[i].style.display="none";
@@ -53,7 +53,6 @@ slideIndex=0;}
 
        setTimeout(startshow, 1000);
       }
-      startshow();
      </script>
     </body>
     </html>
