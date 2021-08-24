@@ -1,6 +1,15 @@
 <Doctype! html>
   <html>
 <head>
+  <script>
+        var myfavnames=["olivia","estella","sabrina","maya","riley","elizebeth","georgia","maya","terrence","gianna"];
+        var count = myfavnames.length;
+        var randomIndex =Math.floor(Math.random()*10;
+        console.log(randomIndex);   
+    var chosenword = myfavnames[randomIndex];
+    console.log(chosenword);
+    </script>
+
 <title> About math</title>
  <link rel='stylesheet' type='text/css' href='butterstyle.css' />
 </head>
@@ -36,6 +45,10 @@
             var num2 = document.getElementById("number"2).value;
             result.value = num1+num2; }
             function multiplytable(){
+              var guessedword=document.getElementById("name").value;   
+              if(guessedword==chosenword){document.getElementById("msg").innerHTML = "good job youre right"}
+              else {document.getElementById("msg").innerHTML = "sorry, the word was +chosenword}
+
             }
 
     <br><br><br><br>
