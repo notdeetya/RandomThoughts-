@@ -32,7 +32,8 @@
      <img src = "wilbrrrr.jpg" class = "slides">
      <img src = "tomMy.jpg" class = "slides">
      <img src = "ranbob.jpg" class = "slides"></div>
-     
+     <br><br>
+     <canvas id = "canvas"> style = "margin:auto;backgroundcolor:#19332d"1px solid #b5c4c1;"></canvas>
      <script>
      function colorchange() {document.getElementById("MyRandomThoughts").style.color = "white";}
       function restorecolor() {document.getElementById("MyRandomThoughts").style.color = "black";} 
@@ -52,6 +53,17 @@ slideIndex=0;}
 
        setTimeout(startshow, 3000);
       }
+     </script>
+     <script>
+      var can=document.getElmentById("my canvas");
+      can.width=window.innerWidth/2;
+      can.height=window.innerWidth*2/3;
+      var c=can.getContext('2d');
+      c.font = "24px 'Itim'";
+      c.fillStyle = "black";
+      c.fontWeight = "900";
+      c.fillText("Your painting area!"can.width/2,50);
+      c.fillText("Have a great day!"can.width/2, can.height/2;
      </script>
     </body>
     </html>
