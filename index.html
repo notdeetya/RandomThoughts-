@@ -33,7 +33,7 @@
      <img src = "tomMy.jpg" class = "slides">
      <img src = "ranbob.jpg" class = "slides"></div>
      <br><br>
-     <canvas id = "canvas" style = "margin:auto;background-color:#19332d;border:1px solid #b5c4c1;"></canvas>
+     <canvas id = "canvas" style = "margin:auto;background-color:#19332d;border:1px solid #b5c4c1; display:block;"></canvas>
      <script>
      function colorchange() {document.getElementById("MyRandomThoughts").style.color = "white";}
       function restorecolor() {document.getElementById("MyRandomThoughts").style.color = "black";} 
@@ -56,8 +56,8 @@ slideIndex=0;}
      </script>
      <script>
       var can=document.getElementById("canvas");
-      can.width=window.innerWidth/2;
-      can.height=window.innerheight*2/3;
+      can.width=window.innerWidth-100;
+      can.height=window.innerheight-100;
       var c=can.getContext('2d');
       c.font = "24px 'Itim'";
       c.fillStyle = "black";
