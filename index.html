@@ -59,11 +59,27 @@ slideIndex=0;}
       can.width=window.innerWidth-100;
       can.height=window.innerheight-100;
       var c=can.getContext('2d');
-      c.font = "24px 'Itim'";
+        var img = new Image();
+       img.src = "balons.png";
+var dx = 0, dy = can.height;
+      function animate(){
+       c.clearRect(0,0,can.width, can.height);
+             c.font = "24px 'Itim'";
       c.fillStyle = "black";
       c.fontWeight = "900";
       c.fillText("Your painting area!",can.width/2,50);
-      c.fillText("Have a great day!",can.width/2, can.height/2;
+      c.fillText("Have a great day!",dx, can.height/2;
+       var dx+=10;
+       if(dx>can.width){
+       dx = 0;
+       }
+       c.drawImage(img,can.width/2,dy,150,150);
+       dy -=10
+       id (dy<0){
+        dy=can.height;
+      }
+    
+                 setInterval(animate,100);
      </script>
     </body>
     </html>
