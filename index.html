@@ -1,88 +1,99 @@
-<Doctype! html>
- <html>
-   <head>
-    <style>
-     div{width:60%;
-    height:300px;
-    margin:auto;
-} 
-     .slides{width:100%;
-}</style>
-     <link rel='stylesheet' type='text/css' href='butterstyle.css' />
-     </head>
-  
-   <title> Home </title>
-    <body>
-     <script>alert(" im tired");</script>
-     <h1 id = "MyRandomThoughts" onmouseover= "colorchange()" onmouseout = "restorecolor()"> My random thoughts
-     </h1>
-     
-     <p id = "today" style = "text-align:center;"></p>
-     <h1 id = "myheading"></h1> 
-<nav id="navbar">
-<a href="index.html"> Home </a>
-<a href="calculator.html"> Calculator </a>
-<a href="100.html"> About math </a>
-<a href="butter.html"> About Butter </a>
- <a href="contactme.html"> Contact me! </a>
-</nav> 
-<p>My random thoughts throught my random days</p>
-     <div id = "slideshow">
-     <img src = "niki nihaachu.jpg" class = "slides">
-     <img src = "wilbrrrr.jpg" class = "slides">
-     <img src = "tomMy.jpg" class = "slides">
-     <img src = "ranbob.jpg" class = "slides"></div>
-     <br><br>
-     <div style="width:100%;display:block;">
-     <canvas id = "canvas" style = "margin:auto;background-color:#e9eeeb;border:1px solid #b5c4c1; display:block;position:absolute;bottom:0px;"></canvas>
-     </div>
-     <script>
-     function colorchange() {document.getElementById("MyRandomThoughts").style.color = "white";}
-      function restorecolor() {document.getElementById("MyRandomThoughts").style.color = "black";} 
-      function getdate() {var today = new Date();document.getElementById("today").innerHTML= today.toLocaleString();}
-      var slideIndex = 0;
-       startshow();
-      setInterval(getdate,3000);
-      function startshow() {
-      var MySlides = document.getElementsByClassName("slides");
-      for (var i=0; i<4;i++){
-MySlides[i].style.display="none";
-}
-MySlides[slideIndex].style.display = "block"; 
-       slideIndex = slideIndex + 1;
-       if(slideIndex>=4){
-slideIndex=0;}
 
-       setTimeout(startshow, 3000);
-      }
-     </script>
-     <script>
-      var can=document.getElementById("canvas");
-      can.width=window.innerWidth-100;
-      can.height=window.innerheight-100;
-      var c=can.getContext('2d');
-        var img = new Image();
-       img.src = "balons.png";
-var dx = 0, dy = can.height;
-      function animate(){
-       c.clearRect(0,0,can.width, can.height);
-             c.font = "24px 'Itim'";
-      c.fillStyle = "black";
-      c.fontWeight = "900";
-      c.fillText("Your painting area!",can.width/2,50);
-      c.fillText("Have a great day!",dx, can.height/2;
-       var dx+=10;
-       if(dx>can.width){
-       dx = 0;
+
+<Doctype! html>
+  <html>
+    <head>
+     <style>
+      div{width:60%;
+     height:300px;
+     margin:auto;
+ } 
+      .slides{width:100%;
+ }</style>
+      <link rel='stylesheet' type='text/css' href='butterstyle.css' />
+      </head>
+   
+    <title> Home </title>
+     <body>
+      <script>alert(" im tired");</script>
+      <h1 id = "MyRandomThoughts" onmouseover= "colorchange()" onmouseout = "restorecolor()"> My random thoughts
+      </h1>
+      
+      <p id = "today" style = "text-align:center;"></p>
+      <!--<h1 id = "myheading"></h1> -->
+ <nav id="navbar" style="margin-top:3px;">
+ <a href="index.html"> Home </a>
+ <a href="calculator.html"> Calculator </a>
+ <a href="100.html"> About math </a>
+ <a href="butter.html"> About Butter </a>
+  <a href="contactme.html"> Contact me! </a>
+ </nav> 
+ <p>My random thoughts throught my random days</p>
+      <div id = "slideshow">
+      <img src = "niki nihaachu.jpg" class = "slides">
+      <img src = "wilbrrrr.jpg" class = "slides">
+      <img src = "tomMy.jpg" class = "slides">
+      <img src = "ranbob.jpg" class = "slides"></div>
+      <br><br><br>
+      <div style="width:40vw;height:50vh;display:inline;margin-left:10px;float:left;overflow:hidden;">
+      <canvas id = "canvas" style = "margin:auto;background-color:rgba(174, 177, 174, 0.5);border:1px solid #b5c4c1;width:100%;"></canvas>
+      </div>
+      <script>
+      function colorchange() {document.getElementById("MyRandomThoughts").style.color = "white";}
+       function restorecolor() {document.getElementById("MyRandomThoughts").style.color = "black";} 
+       function getdate() {var today = new Date();document.getElementById("today").innerHTML= today.toLocaleString();}
+       var slideIndex = 0;
+        startshow();
+       setInterval(getdate,3000);
+       function startshow() {
+       var MySlides = document.getElementsByClassName("slides");
+       for (var i=0; i<4;i++){
+ MySlides[i].style.display="none";
+ }
+ MySlides[slideIndex].style.display = "block"; 
+        slideIndex = slideIndex + 1;
+        if(slideIndex>=4){
+ slideIndex=0;}
+ 
+        setTimeout(startshow, 3000);
        }
-       c.drawImage(img,can.width/2,dy,150,150);
-       dy -=10
-       id (dy<0){
-        dy=can.height;
-      }
-      }
-    
-                 setInterval(animate,100);
-     </script>
-    </body>
-    </html>
+      </script>
+      <script>
+       var can=document.getElementById("canvas");
+       can.width=parent.innerWidth/2;
+       can.height=parent.innerHeight-100;
+       var c=can.getContext('2d');
+         var img = new Image();
+        img.src = "balons.png";
+ var dx = 0, dy = can.height;
+       function animate(){
+        c.clearRect(0,0,can.width, can.height);
+              c.font = "28px 'Itim'";
+       c.fillStyle = "black";
+       c.fontWeight = "900";
+       c.fillText("My Favorite Yoututbers!",can.width/2,50);
+       c.font = "24px 'Itim'";
+       c.fillText("-Niki Nihacchu",(can.width/2)+20,120);
+       c.fillText("-TommyInnit",(can.width/2)+20,160);
+       c.fillText("-Wilbur Soot",(can.width/2)+20,200);
+       c.fillText("-George NotFound",(can.width/2)+20,240);
+       c.fillText("Have a great day!",dx, can.height/2+50);
+        dx+=10;
+        if(dx>can.width){
+        dx = 0;
+        }
+        c.drawImage(img,can.width/4-100,dy,150,150);
+        c.drawImage(img,can.width/4-150,dy,150,150);
+        c.drawImage(img,can.width/4-50,dy,150,150);
+        
+        dy -=10
+        if (dy<0){
+         dy=can.height;
+       }
+       }
+     
+                  setInterval(animate,100);
+      </script>
+     </body>
+     </html>
+ 
