@@ -27,6 +27,9 @@
  <a href="100.html"> About math </a>
  <a href="butter.html"> About Butter </a>
   <a href="contactme.html"> Contact me! </a>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<img src="bars.png"/></a>
+
  </nav> 
  <p>My random thoughts throught my random days</p>
       <div id = "slideshow">
@@ -93,6 +96,15 @@
        }
      
                   setInterval(animate,100);
+        function myFunction() {
+  var x = document.getElementById("navbar");
+  if (x.className === "nav-bar1") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav-bar1";
+  }
+}
+
       </script>
      </body>
      </html>
